@@ -1,6 +1,4 @@
 <?php
-use Illuminate\Support\Facades\Route;
-
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +11,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-Route::get('/details', 'DetailController@index');
-Route::get('/meets', 'DetailController@meet');
-Route::get('/shops', 'DetailController@shop');
-
-
+Route::get('/', function () {
+    return view('welcome');
+});
